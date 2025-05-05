@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block section_name %}
+<span>
+    Education
+</span>
+{% endblock %}
+
+<!-- Make this dynamic -->
+{% block content %}
+{% for instance in education %}
+<span>{{ instance.institution }}</span>, 
+<span>{{ instance.subject }}</span>, 
+<span>{{ instance.year }}</span>, 
+{% endfor %}
+{% endblock %}

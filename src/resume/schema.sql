@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS experience;
+DROP TABLE IF EXISTS education;
+
+CREATE TABLE experience (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    company TEXT NOT NULL,
+    loc TEXT NOT NULL,
+    title TEXT NOT NULL
+);
+
+CREATE TABLE education (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    institution TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    year TEXT NOT NULL
+);
