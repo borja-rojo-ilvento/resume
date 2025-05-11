@@ -3,7 +3,9 @@
   "packages": [
     "uv@latest",
     "ruff@latest",
-    "python@3.12"
+    "python@3.12",
+    "jq@latest",
+    "bat@latest"
   ],
   "shell": {
     "init_hook": [

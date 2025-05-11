@@ -1,0 +1,112 @@
+[
+  {
+    "company": "M Science",
+    "new_name": "",
+    "loc": "New York, NY",
+    "title": "Senior Software Engineer ",
+    "tenure": "June 2024",
+    "phone_number": "",
+    "tech_skills": "Typescript, Python, Git, VSCode, Docker, AWS, LangChain, SQL Alchemy, Pandas, FastAPI, Next.js, drizzle, Zod",
+    "soft_skills": "",
+    "description": "Develop AI Agents to automate financial analysis report generation. Leverage Python using the LangChain and LangGraph framework for implementation. Design systems to support multiple app interfaces. Spearhead lightweight committee to progress toolchain and coding standards adoption. Rapid onboarding of Typescript and Next.js to assist in quick pivots and tight deadlines. Develop lightweight tool for Python to profile memory usage for a crashing service. Refactor repo's devcontainer and project manager to increase build speed and reduce complexity. Refactor GitHub workflows to reduce CI/CD end-to-end times. Create automated evaluation set generation for AI agents based on source data and Jinja2 templates for API payload generation. Create an AI agent capable of guiding a user towards generating a valid and contextual API payload for any schema using LangGraph and JSON Schema."
+  },
+  {
+    "company": "ASML",
+    "new_name": "",
+    "loc": "Wilton, CT",
+    "title": "Senior Software Engineer",
+    "tenure": "Jun 2023 - Feb 2024",
+    "phone_number": "(203) 761-4000",
+    "tech_skills": "C++, Red Hat, git, Atlassian Suite, VS Code, Clearcase, Windows Enterprise Suite",
+    "soft_skills": "",
+    "description": "Responsible for implementing and maintaining calibration, performance, and diagnostics tooling for the Twinscan line of lithography machines. These machines are responsible for creating virtually all the computer chips on the planet, from CPUs to ancillary integrated circuits."
+  },
+  {
+    "company": "Insight Global",
+    "new_name": "",
+    "loc": "Stamford, CT",
+    "title": "Senior Software Engineer",
+    "tenure": "Jun 2023 - Feb 2024",
+    "phone_number": "(855) 485-8732",
+    "tech_skills": "",
+    "soft_skills": "",
+    "description": "Agency through which I worked at ASML."
+  },
+  {
+    "company": "IsoPlexis",
+    "new_name": "Bruker",
+    "loc": "Branford, CT",
+    "title": "Software Engineer",
+    "tenure": "Nov 2020 - Jan 2023",
+    "phone_number": "(203) 208-4111",
+    "tech_skills": "C++, Qt, Windows, Visual Studio, git, Atlassian Suite",
+    "soft_skills": "",
+    "description": "User interface development for the IsoSpeak platform. Interfacing with data-processing routines using C++ with the Qt framework and system calls. Implementing designs, functionality, refactors, and bug-fixes for all aspects of the user interface in a complete overhaul. Mentoring of new employees. Presentations of advanced and modern C++ concepts and libraries. Agile-like software development."
+  },
+  {
+    "company": "Port25",
+    "new_name": "Sparkpost",
+    "loc": "Columbia, MD",
+    "title": "Software Engineer",
+    "tenure": "May 2019 - Jan 2020",
+    "phone_number": "(410) 872-4910",
+    "tech_skills": "C++, macOS, Emacs, git, Atlassian Suite",
+    "soft_skills": "",
+    "description": "Feature expansion of PowerMTA email program. Development of command-line tools, increasing flexibility of sending organization, and adding interactions between existing features. Constant contact with customers to ensure product development was headed in a satisfactory direction. Agile-like software development."
+  },
+  {
+    "company": "Robotic Research, LLC",
+    "new_name": "Forterra",
+    "loc": "Clarksburg, MD",
+    "title": "Software Engineer",
+    "tenure": "Feb 2018 - May 2019",
+    "phone_number": "(240) 631-0008",
+    "tech_skills": "C++, Ubuntu, Emacs, git, Atlassian Suite",
+    "soft_skills": "",
+    "description": "Autonomous vehicle programming and testing. Design and development of a module for converting sensor data to a representation suitable for path planning. Design and implementation of communications between the vehicle and a UI using the JAUS standard. Testing of software using synthetic environments. On-site testing at military bases with partner companies for stress testing and live demonstration."
+  },
+  {
+    "company": "LSA Autonomy",
+    "new_name": "MACH",
+    "loc": "Westminter, MD",
+    "title": "Software Engineer",
+    "tenure": "Jun 2017 - Feb 2018",
+    "phone_number": "(443) 261-5722",
+    "tech_skills": "C++, macOS, Emacs, svn",
+    "soft_skills": "",
+    "description": "Designed and implemented color detection, bounding, and indication for live video to the web to allow truck drivers to detect when a shipment had been successfully loaded or offloaded. Designed and implemented a custom derivative of Huffman encoding for live data streams for the Velodyne VLP-16 LiDAR sensor."
+  },
+  {
+    "company": "LSA Autonomy",
+    "new_name": "",
+    "loc": "Westminter, MD",
+    "title": "Software Engineer Intern",
+    "tenure": "Jan 2017",
+    "phone_number": "",
+    "tech_skills": "Octave",
+    "soft_skills": "",
+    "description": "Classification of LEDar devivce used repurposed for near-field object detection. Experiment design, execution, and analysis."
+  },
+  {
+    "company": "Connect Prep",
+    "new_name": "",
+    "loc": "Westport, CT",
+    "title": "Software Engineer Intern",
+    "tenure": "Jan 2016 - Jun 2017",
+    "phone_number": "",
+    "tech_skills": "HTML, CSS, Javascript, Meteor, MongoDB",
+    "soft_skills": "",
+    "description": "Front end web development used to power a tutoring platform. Design and implementation of different practice tests and evaluation systems."
+  },
+  {
+    "company": "University of Rochester",
+    "new_name": "",
+    "loc": "Rochester, NY",
+    "title": "Research Assistant",
+    "tenure": "Aug 2015 - Aug 2016",
+    "phone_number": "",
+    "tech_skills": "Logic Pro, Android Studio",
+    "soft_skills": "",
+    "description": "Data acquisition for modal analysis of frequencies in the 2-D plane. Development of Android app to record speech data used to detect emotional variance in patients throughout their day."
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "institution": "University of Rochester",
+    "location": "Rochester, NY",
+    "subject": "Electrical and Computer Engineering",
+    "tier": "Bachelor of Science",
+    "date": "Sept 2013 - May 2017"
+  },
+  {
+    "institution": "University of Rochester",
+    "location": "Rochester, NY",
+    "subject": "Mathematics",
+    "tier": "Minor",
+    "date": "2017"
+  },
+  {
+    "institution": "University of Rochester",
+    "location": "Rochester, NY",
+    "subject": "Music",
+    "tier": "Minor",
+    "date": "2017"
+  },
+  {
+    "institution": "University of Rochester",
+    "location": "Rochester, NY",
+    "subject": "Computer Science",
+    "tier": "Minor",
+    "date": "2017"
+  },
+  {
+    "institution": "Stanford",
+    "location": "Online",
+    "subject": "Supervised Machine Learning: Regression and Classification",
+    "tier": "Certificate",
+    "date": "2023"
+  },
+  {
+    "institution": "Stanford",
+    "location": "Online",
+    "subject": "Advanced Learning Algorithms",
+    "tier": "Certificate",
+    "date": "2023"
+  },
+  {
+    "institution": "Stanford",
+    "location": "Online",
+    "subject": "Unsupervised Learning, Recommenders, Reinforcement Learning",
+    "tier": "Certificate",
+    "date": "2023"
+  },
+  {
+    "institution": "Stanford",
+    "location": "Online",
+    "subject": "Machine Learning",
+    "tier": "Specialization",
+    "date": "2023"
+  },
+  {
+    "institution": "Educative",
+    "location": "Online",
+    "subject": "A Guide to Git & Version Control",
+    "tier": "Certificate",
+    "date": "2022"
+  },
+  {
+    "institution": "Harvard Business School Online",
+    "location": "Online",
+    "subject": "Entrepreneurship Essentials",
+    "tier": "Certificate",
+    "date": "2020"
+  },
+  {
+    "institution": "ColumbiaX",
+    "location": "Online",
+    "subject": "Robotics",
+    "tier": "Certificate",
+    "date": "2018"
+  },
+  {
+    "institution": "MITx",
+    "location": "Online",
+    "subject": "Becoming an Entrepreneur",
+    "tier": "Certificate",
+    "date": "2017"
+  }
+]

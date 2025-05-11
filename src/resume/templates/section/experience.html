@@ -1,15 +1,37 @@
 {% extends 'base.html' %}
 
 {% block section_name %}
-<span>
+<span class="section-name">
     Experience
 </span>
 {% endblock %}
 
 {% block content %}
-{% for instance in experience %}
-<span>{{ company }}</span>
-<span>{{ loc }}</span>
-<span>{{ title }}</span>
-{% endfor %}
+<div class="resume-section-container">
+    {% for instance in experience %}
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">{{ instance.company }}</span>
+                <span class="location">{{ instance.loc }}</span>
+            </div>
+            <div class="date-range">{{ instance.tenure }}</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">{{ instance.title }}</div>
+        </div>
+        <div class="tech-skills">
+            {{ instance.tech_skills }}
+        </div>
+        {% if instance.description %}
+        <div class="description">
+            {{ instance.description }}
+        </div>
+        {% endif %}
+    </div>
+    {% if not loop.last %}
+    <div class="resume-divider"></div>
+    {% endif %}
+    {% endfor %}
+</div>
 {% endblock %}

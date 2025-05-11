@@ -1,0 +1,141 @@
+/* Shared Resume Section Styles */
+
+/* Section name styles */
+.section-name {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin: 0 auto 40px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e0e0e0;
+    letter-spacing: 0.5px;
+    max-width: 800px;
+}
+
+/* Container for any resume section */
+.resume-section-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Each individual entry (education or experience) */
+.resume-entry {
+    margin-bottom: 16px;
+}
+
+/* Header layout for each entry */
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+/* Left side info (institution/company and location) */
+.primary-info {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Institution/Company styles */
+.institution,
+.company {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Location styling */
+.location {
+    color: #666;
+}
+
+/* Date range styling */
+.date-range {
+    font-style: italic;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Second line details */
+.resume-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Subject/Position styling - Education only */
+.subject {
+    font-weight: 500;
+}
+
+/* Tier styling - Education only */
+.tier {
+    font-style: italic;
+    text-align: right;
+}
+
+/* Title styling - Experience only */
+.title {
+    font-weight: 500;
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Tech skills styling - Experience only */
+.tech-skills {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 12px;
+    word-wrap: break-word;
+}
+
+/* Description for experience entries */
+.description {
+    margin-top: 8px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Divider between entries */
+.resume-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 24px 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .section-name {
+        font-size: 2rem;
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+    
+    .resume-section-container {
+        max-width: 100%;
+        padding: 20px;
+    }
+    
+    .resume-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .resume-details {
+        flex-direction: column;
+        gap: 4px;
+    }
+    
+    .tier {
+        text-align: left;
+    }
+}

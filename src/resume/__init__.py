@@ -23,10 +23,12 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    from . import db
-    db.register(app)
+    from .db import base
+
+    base.register(app)
 
     from . import section
+
     section.register(app)
 
     return app
