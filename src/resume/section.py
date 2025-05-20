@@ -19,8 +19,15 @@ def experience():
     """Work experience"""
     db = get_db()
     experience = db.execute("SELECT * FROM experience").fetchall()
-    # rows = [{"company": "my company", "loc": "other loc"}]
     return render_template("/section/experience.html", experience=experience)
+
+
+@bp.get("/skills")
+def skills():
+    """Work experience"""
+    db = get_db()
+    skills = db.execute("SELECT * FROM skills").fetchall()
+    return render_template("/section/skills.html", skills=skills)
 
 
 @bp.get("/contact")

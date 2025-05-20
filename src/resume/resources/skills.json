@@ -1,0 +1,117 @@
+[
+  {
+    "Type": "Programming",
+    "Skill": "C++",
+    "Capacity": "Expert"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "Python",
+    "Capacity": "Proficient"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "Rust",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "Java",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "C",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "Javascript",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "HTML",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Programming",
+    "Skill": "CSS",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "OS",
+    "Skill": "Linux",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "OS",
+    "Skill": "Windows",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "OS",
+    "Skill": "macOS",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "Programs",
+    "Skill": "Visual Sudio",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "Programs",
+    "Skill": "Emacs",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Programs",
+    "Skill": "VIM",
+    "Capacity": "Knowledgable"
+  },
+  {
+    "Type": "Tool",
+    "Skill": "shell (bash/zsh)",
+    "Capacity": "Proficient"
+  },
+  {
+    "Type": "Tool",
+    "Skill": "git",
+    "Capacity": "Proficient"
+  },
+  {
+    "Type": "Tool",
+    "Skill": "svn",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "ROS",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "numpy",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "pandas",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "matplotlib",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "scikit-learn",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "C++ STL",
+    "Capacity": "Proficient"
+  }
+]

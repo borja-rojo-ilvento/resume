@@ -14,3 +14,9 @@ CREATE TABLE education (
     subject TEXT NOT NULL,
     year TEXT NOT NULL
 );
+
+CREATE TABLE skill (
+    type TEXT NOT NULL,
+    skill TEXT NOT NULL,
+    capacity TEXT NOT NULL
+);
