@@ -1,9 +1,42 @@
-<!-- Make dynamic on contact info -->
-<title>Borja Rojo Ilvento - Resume</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
-<h1>
-    {% block section_name %}{% endblock %} 
-</h1>
-<div>
-    {% block content %}{% endblock %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if profile %}{{ profile.name }}{% else %}Resume{% endif %} - Resume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <a href="{{ url_for('main.index') }}">{% if profile %}{{ profile.name }}{% else %}Resume{% endif %}</a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="{{ url_for('main.index') }}">About</a></li>
+                    <li><a href="{{ url_for('section.experience') }}">Experience</a></li>
+                    <li><a href="{{ url_for('section.education') }}">Education</a></li>
+                    <li><a href="{{ url_for('section.skills') }}">Skills</a></li>
+                    <li><a href="{{ url_for('section.contact') }}">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>{% block section_name %}{% endblock %}</h1>
+            <div class="content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; {% now 'Y' %} {% if profile %}{{ profile.name }}{% else %}Resume{% endif %}. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

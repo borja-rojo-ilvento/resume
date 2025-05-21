@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block section_name %}
+<span class="section-name">
+    About Me
+</span>
+{% endblock %}
+
+{% block content %}
+<div class="resume-section-container bio-container">
+    {% if profile %}
+    <div class="profile-section">
+        <div class="profile-header">
+            <h2 class="profile-name">{{ profile.name }}</h2>
+            <div class="profile-title">{{ profile.title }}</div>
+        </div>
+        
+        <div class="profile-contact">
+            <div class="contact-item">
+                <span class="contact-label">Location:</span>
+                <span class="contact-value">{{ profile.location }}</span>
+            </div>
+            
+            <div class="social-links">
+                {% if profile.linkedin %}
+                <a href="{{ profile.linkedin }}" target="_blank" class="social-link">
+                    <span class="social-icon">LinkedIn</span>
+                </a>
+                {% endif %}
+                
+                {% if profile.github %}
+                <a href="{{ profile.github }}" target="_blank" class="social-link">
+                    <span class="social-icon">GitHub</span>
+                </a>
+                {% endif %}
+                
+                {% if profile.email %}
+                <a href="mailto:{{ profile.email }}" class="social-link">
+                    <span class="social-icon">Email</span>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        
+        <div class="profile-bio">
+            {{ profile.bio | safe }}
+        </div>
+    </div>
+    {% else %}
+    <div class="profile-section">
+        <p>Profile information not available.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

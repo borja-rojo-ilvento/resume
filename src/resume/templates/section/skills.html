@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block section_name %}
+<span class="section-name">
+    Skills
+</span>
+{% endblock %}
+
+{% block content %}
+<div class="resume-section-container">
+    {% set skill_types = {} %}
+    
+    {% for skill in skills %}
+        {% if skill.Type not in skill_types %}
+            {% set _ = skill_types.update({skill.Type: []}) %}
+        {% endif %}
+        {% set _ = skill_types[skill.Type].append(skill) %}
+    {% endfor %}
+    
+    {% for type, type_skills in skill_types.items() %}
+        <div class="skill-category">
+            <h3 class="skill-type">{{ type }}</h3>
+            <div class="skill-list">
+                {% for skill in type_skills %}
+                    <div class="skill-item">
+                        <span class="skill-name">{{ skill.Skill }}</span>
+                        <span class="skill-level">{{ skill.Capacity }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% if not loop.last %}
+        <div class="resume-divider"></div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

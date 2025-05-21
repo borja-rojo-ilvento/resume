@@ -3,8 +3,6 @@ from flask import Flask
 from markupsafe import escape
 from flask import render_template
 
-# NOTE (BRI) What is `app.instance_path`?
-
 
 def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True)
@@ -23,9 +21,20 @@ def create_app(test_config=None):
     except OSError:
         pass
 
+    # Add the current year to jinja templates
+    @app.context_processor
+    def inject_now():
+        from datetime import datetime
+
+        return {"now": datetime.now}
+
     from .db import base
 
     base.register(app)
+
+    from . import main
+
+    main.register(app)
 
     from . import section
 

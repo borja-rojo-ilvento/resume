@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block section_name %}
+<span class="section-name">
+    Contact
+</span>
+{% endblock %}
+
+{% block content %}
+<div class="resume-section-container">
+    <div class="contact-container">
+        <div class="contact-info">
+            {% if profile %}
+            <div class="contact-group">
+                <h3 class="contact-category">Name</h3>
+                <p class="contact-value">{{ profile.name }}</p>
+            </div>
+            
+            <div class="contact-group">
+                <h3 class="contact-category">Location</h3>
+                <p class="contact-value">{{ profile.location }}</p>
+            </div>
+            
+            {% if profile.email %}
+            <div class="contact-group">
+                <h3 class="contact-category">Email</h3>
+                <p class="contact-value">
+                    <a href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+                </p>
+            </div>
+            {% endif %}
+            
+            {% if profile.linkedin %}
+            <div class="contact-group">
+                <h3 class="contact-category">LinkedIn</h3>
+                <p class="contact-value">
+                    <a href="{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a>
+                </p>
+            </div>
+            {% endif %}
+            
+            {% if profile.github %}
+            <div class="contact-group">
+                <h3 class="contact-category">GitHub</h3>
+                <p class="contact-value">
+                    <a href="{{ profile.github }}" target="_blank">{{ profile.github }}</a>
+                </p>
+            </div>
+            {% endif %}
+            {% else %}
+            <div class="contact-group">
+                <h3 class="contact-category">Contact Information</h3>
+                <p class="contact-value">Profile information not available.</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

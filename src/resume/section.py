@@ -1,6 +1,4 @@
 from flask import Blueprint, render_template
-
-
 from .db.base import get_db
 
 bp = Blueprint("section", __name__, url_prefix="/section")
@@ -33,7 +31,9 @@ def skills():
 @bp.get("/contact")
 def contact():
     """Contact information."""
-    return render_template("/section/contact.html")
+    db = get_db()
+    profile = db.execute("SELECT * FROM profile").fetchone()
+    return render_template("/section/contact.html", profile=profile)
 
 
 def register(app):

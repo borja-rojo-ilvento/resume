@@ -8,8 +8,6 @@ from datetime import datetime
 import click
 from flask import current_app, g
 
-# NOTE (BRI) Something about this, I don't like. This is managed life-cycle, in python.
-
 
 def get_db():
     if "db" in g:
@@ -31,12 +29,10 @@ def close_db(e=None):
 def init_db():
     db = get_db()
 
-    # with current_app.open_resource("schema.sql") as f:
-    #     db.executescript(f.read().decode("utf8"))
-
     inject_data(db, "experience")
     inject_data(db, "education")
     inject_data(db, "skills")
+    inject_data(db, "profile")
 
 
 @click.command("init-db")
@@ -49,7 +45,7 @@ def init_db_command():
     click.echo("Initialized database.")
 
 
-sqlite3.register_converter("timestamp", lambda v: datetime.fromisoformat(v, decode()))
+sqlite3.register_converter("timestamp", lambda v: datetime.fromisoformat(v.decode()))
 
 
 def register(app):
@@ -66,7 +62,8 @@ def inject_data(db, tablename):
 {",\n".join([f"\t{key} TEXT NOT NULL" for key in data[0].keys()])}
 );
 """
-    insert_many_statement = f"INSERT INTO {tablename} VAlUES({', '.join([f':{key}' for key in data[0].keys()])})"
+
+    insert_many_statement = f"INSERT INTO {tablename} VALUES({', '.join([f':{key}' for key in data[0].keys()])})"
 
     cur = db.cursor()
     cur.execute(drop_table)
