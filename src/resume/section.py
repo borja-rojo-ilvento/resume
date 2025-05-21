@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template
 from .db.base import get_db
 
-bp = Blueprint("section", __name__, url_prefix="/section")
+bp = Blueprint("section", __name__, url_prefix="/")
 
 
 @bp.get("/education")
