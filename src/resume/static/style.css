@@ -358,6 +358,12 @@ footer {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+    /* Keep body flexbox layout intact for mobile */
+    body {
+        min-height: 100vh; /* Ensure minimum viewport height */
+    }
+    
+    /* Only change the header's internal container layout, not the header itself */
     header .container {
         flex-direction: column;
         gap: 15px;
