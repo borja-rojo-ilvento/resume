@@ -28,9 +28,14 @@ def create_app(test_config=None):
 
         return {"now": datetime.now}
 
-    from .db import base
+    # Initialize context processors for static compilation (Flask-native approach)
+    from .resources.registry import register_context_processors
 
-    base.register(app)
+    register_context_processors(app)
+
+    # from .db import base
+
+    # base.register(app)
 
     from . import main
 

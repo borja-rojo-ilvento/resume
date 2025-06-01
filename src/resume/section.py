@@ -1,39 +1,33 @@
 from flask import Blueprint, render_template
-from .db.base import get_db
 
-bp = Blueprint("section", __name__, url_prefix="/")
+bp = Blueprint("section", __name__, url_prefix="/section")
 
 
 @bp.get("/education")
 def education():
     """Studies and certifications"""
-    db = get_db()
-    education = db.execute("SELECT * FROM education")
-    return render_template("/section/education.html", education=education)
+    # Context processor automatically injects 'education' into template context
+    return render_template("/section/education.html")
 
 
 @bp.get("/experience")
 def experience():
     """Work experience"""
-    db = get_db()
-    experience = db.execute("SELECT * FROM experience").fetchall()
-    return render_template("/section/experience.html", experience=experience)
+    # Context processor automatically injects 'experience' into template context
+    return render_template("/section/experience.html")
 
 
 @bp.get("/skills")
 def skills():
-    """Work experience"""
-    db = get_db()
-    skills = db.execute("SELECT * FROM skills").fetchall()
-    return render_template("/section/skills.html", skills=skills)
+    """Skills and competencies"""
+    # Context processor automatically injects 'skills' into template context
+    return render_template("/section/skills.html")
 
 
 @bp.get("/contact")
 def contact():
     """Contact information."""
-    db = get_db()
-    profile = db.execute("SELECT * FROM profile").fetchone()
-    return render_template("/section/contact.html", profile=profile)
+    return render_template("/section/contact.html")
 
 
 def register(app):
