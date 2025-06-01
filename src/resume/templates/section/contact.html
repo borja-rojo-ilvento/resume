@@ -1,13 +1,69 @@
 {% extends 'base.html' %}
+
 {% block section_name %}
-<span>
+<span class="section-name">
     Contact
 </span>
 {% endblock %}
-<!-- Make this dynamic -->
+
 {% block content %}
-<p>Borja Rojo Ilvento</p>
-<p>38 Highmeadow Road</p>
-<p>https://www.linkedin.com/in/borja-rojo-ilvento/</p>
-<p>https://github.com/borja-rojo-ilvento</p>
+<div class="resume-section-container">
+    <div class="contact-container">
+        <!-- Header with title and send button -->
+        <div class="contact-header">
+            {% if profile and profile.email %}
+            <a href="mailto:{{ profile.email }}?subject=Let's%20Connect" class="contact-send-button">
+                Send me a message
+            </a>
+            {% endif %}
+        </div>
+
+
+        <!-- Simplified Contact Information -->
+        {% if profile %}
+        <div class="contact-info-simple">
+            <div class="contact-item">
+                <span class="contact-label">Name:</span>
+                <span class="contact-value">{{ profile.name }}</span>
+            </div>
+            
+            <div class="contact-item">
+                <span class="contact-label">Location:</span>
+                <span class="contact-value">{{ profile.location }}</span>
+            </div>
+            
+            {% if profile.email %}
+            <div class="contact-item">
+                <span class="contact-label">Email:</span>
+                <span class="contact-value">
+                    <a href="mailto:{{ profile.email }}" class="contact-link">{{ profile.email }}</a>
+                </span>
+            </div>
+            {% endif %}
+            
+            {% if profile.linkedin %}
+            <div class="contact-item">
+                <span class="contact-label">LinkedIn:</span>
+                <span class="contact-value">
+                    <a href="{{ profile.linkedin }}" target="_blank" class="contact-link">Connect with me</a>
+                </span>
+            </div>
+            {% endif %}
+            
+            {% if profile.github %}
+            <div class="contact-item">
+                <span class="contact-label">GitHub:</span>
+                <span class="contact-value">
+                    <a href="{{ profile.github }}" target="_blank" class="contact-link">View my code</a>
+                </span>
+            </div>
+            {% endif %}
+        </div>
+        {% else %}
+        <div class="contact-error">
+            <p>Profile information not available.</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}
