@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Resume</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <!-- <a href="index.html"></a> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="experience">Experience</a></li>
+                    <li><a href="education">Education</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>
+<span class="section-name">
+    Experience
+</span>
+</h1>
+            <div class="content">
+                
+<div class="resume-section-container">
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">M Science</span>
+                <span class="location">New York, NY</span>
+            </div>
+            <div class="date-range">June 2024</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Senior Software Engineer </div>
+        </div>
+        <div class="tech-skills">
+            Typescript, Python, Git, VSCode, Docker, AWS, LangChain, SQL Alchemy, Pandas, FastAPI, Next.js, drizzle, Zod
+        </div>
+        
+        <div class="description">
+            Develop AI Agents to automate financial analysis report generation. Leverage Python using the LangChain and LangGraph framework for implementation. Design systems to support multiple app interfaces. Spearhead lightweight committee to progress toolchain and coding standards adoption. Rapid onboarding of Typescript and Next.js to assist in quick pivots and tight deadlines. Develop lightweight tool for Python to profile memory usage for a crashing service. Refactor repo&#39;s devcontainer and project manager to increase build speed and reduce complexity. Refactor GitHub workflows to reduce CI/CD end-to-end times. Create automated evaluation set generation for AI agents based on source data and Jinja2 templates for API payload generation. Create an AI agent capable of guiding a user towards generating a valid and contextual API payload for any schema using LangGraph and JSON Schema.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">ASML</span>
+                <span class="location">Wilton, CT</span>
+            </div>
+            <div class="date-range">Jun 2023 - Feb 2024</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Senior Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            C++, Red Hat, git, Atlassian Suite, VS Code, Clearcase, Windows Enterprise Suite
+        </div>
+        
+        <div class="description">
+            Responsible for implementing and maintaining calibration, performance, and diagnostics tooling for the Twinscan line of lithography machines. These machines are responsible for creating virtually all the computer chips on the planet, from CPUs to ancillary integrated circuits.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">Insight Global</span>
+                <span class="location">Stamford, CT</span>
+            </div>
+            <div class="date-range">Jun 2023 - Feb 2024</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Senior Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            
+        </div>
+        
+        <div class="description">
+            Agency through which I worked at ASML.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">IsoPlexis</span>
+                <span class="location">Branford, CT</span>
+            </div>
+            <div class="date-range">Nov 2020 - Jan 2023</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            C++, Qt, Windows, Visual Studio, git, Atlassian Suite
+        </div>
+        
+        <div class="description">
+            User interface development for the IsoSpeak platform. Interfacing with data-processing routines using C++ with the Qt framework and system calls. Implementing designs, functionality, refactors, and bug-fixes for all aspects of the user interface in a complete overhaul. Mentoring of new employees. Presentations of advanced and modern C++ concepts and libraries. Agile-like software development.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">Port25</span>
+                <span class="location">Columbia, MD</span>
+            </div>
+            <div class="date-range">May 2019 - Jan 2020</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            C++, macOS, Emacs, git, Atlassian Suite
+        </div>
+        
+        <div class="description">
+            Feature expansion of PowerMTA email program. Development of command-line tools, increasing flexibility of sending organization, and adding interactions between existing features. Constant contact with customers to ensure product development was headed in a satisfactory direction. Agile-like software development.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">Robotic Research, LLC</span>
+                <span class="location">Clarksburg, MD</span>
+            </div>
+            <div class="date-range">Feb 2018 - May 2019</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            C++, Ubuntu, Emacs, git, Atlassian Suite
+        </div>
+        
+        <div class="description">
+            Autonomous vehicle programming and testing. Design and development of a module for converting sensor data to a representation suitable for path planning. Design and implementation of communications between the vehicle and a UI using the JAUS standard. Testing of software using synthetic environments. On-site testing at military bases with partner companies for stress testing and live demonstration.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">LSA Autonomy</span>
+                <span class="location">Westminter, MD</span>
+            </div>
+            <div class="date-range">Jun 2017 - Feb 2018</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer</div>
+        </div>
+        <div class="tech-skills">
+            C++, macOS, Emacs, svn
+        </div>
+        
+        <div class="description">
+            Designed and implemented color detection, bounding, and indication for live video to the web to allow truck drivers to detect when a shipment had been successfully loaded or offloaded. Designed and implemented a custom derivative of Huffman encoding for live data streams for the Velodyne VLP-16 LiDAR sensor.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">LSA Autonomy</span>
+                <span class="location">Westminter, MD</span>
+            </div>
+            <div class="date-range">Jan 2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer Intern</div>
+        </div>
+        <div class="tech-skills">
+            Octave
+        </div>
+        
+        <div class="description">
+            Classification of LEDar devivce used repurposed for near-field object detection. Experiment design, execution, and analysis.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">Connect Prep</span>
+                <span class="location">Westport, CT</span>
+            </div>
+            <div class="date-range">Jan 2016 - Jun 2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Software Engineer Intern</div>
+        </div>
+        <div class="tech-skills">
+            HTML, CSS, Javascript, Meteor, MongoDB
+        </div>
+        
+        <div class="description">
+            Front end web development used to power a tutoring platform. Design and implementation of different practice tests and evaluation systems.
+        </div>
+        
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="company">University of Rochester</span>
+                <span class="location">Rochester, NY</span>
+            </div>
+            <div class="date-range">Aug 2015 - Aug 2016</div>
+        </div>
+        <div class="resume-details">
+            <div class="title">Research Assistant</div>
+        </div>
+        <div class="tech-skills">
+            Logic Pro, Android Studio
+        </div>
+        
+        <div class="description">
+            Data acquisition for modal analysis of frequencies in the 2-D plane. Development of Android app to record speech data used to detect emotional variance in patients throughout their day.
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

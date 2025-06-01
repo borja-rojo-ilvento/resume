@@ -30,3 +30,8 @@ def register_context_processors(app):
     def inject_skills():
         """Inject skills data into template context."""
         return {"skills": load_json_resource("skills")}
+
+    @app.context_processor
+    def inject_profile():
+        """Inject profile data into template context."""
+        return {"profile": load_json_resource("profile")}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Resume</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <!-- <a href="index.html"></a> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="experience">Experience</a></li>
+                    <li><a href="education">Education</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>
+<span>
+    Contact
+</span>
+</h1>
+            <div class="content">
+                
+<p>Borja Rojo Ilvento</p>
+<p>38 Highmeadow Road</p>
+<p>https://www.linkedin.com/in/borja-rojo-ilvento/</p>
+<p>https://github.com/borja-rojo-ilvento</p>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

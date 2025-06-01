@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - Resume</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <!-- <a href="index.html"></a> -->
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="experience">Experience</a></li>
+                    <li><a href="education">Education</a></li>
+                    <li><a href="skills">Skills</a></li>
+                    <li><a href="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>
+<span class="section-name">
+    Education
+</span>
+</h1>
+            <div class="content">
+                
+<div class="resume-section-container">
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">University of Rochester</span>
+                <span class="location">Rochester, NY</span>
+            </div>
+            <div class="date-range">Sept 2013 - May 2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Electrical and Computer Engineering</div>
+            <div class="tier">Bachelor of Science</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">University of Rochester</span>
+                <span class="location">Rochester, NY</span>
+            </div>
+            <div class="date-range">2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Mathematics</div>
+            <div class="tier">Minor</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">University of Rochester</span>
+                <span class="location">Rochester, NY</span>
+            </div>
+            <div class="date-range">2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Music</div>
+            <div class="tier">Minor</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">University of Rochester</span>
+                <span class="location">Rochester, NY</span>
+            </div>
+            <div class="date-range">2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Computer Science</div>
+            <div class="tier">Minor</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Stanford</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2023</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Supervised Machine Learning: Regression and Classification</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Stanford</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2023</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Advanced Learning Algorithms</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Stanford</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2023</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Unsupervised Learning, Recommenders, Reinforcement Learning</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Stanford</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2023</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Machine Learning</div>
+            <div class="tier">Specialization</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Educative</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2022</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">A Guide to Git &amp; Version Control</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">Harvard Business School Online</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2020</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Entrepreneurship Essentials</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">ColumbiaX</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2018</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Robotics</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    <div class="resume-divider"></div>
+    
+    
+    <div class="resume-entry">
+        <div class="resume-header">
+            <div class="primary-info">
+                <span class="institution">MITx</span>
+                <span class="location">Online</span>
+            </div>
+            <div class="date-range">2017</div>
+        </div>
+        <div class="resume-details">
+            <div class="subject">Becoming an Entrepreneur</div>
+            <div class="tier">Certificate</div>
+        </div>
+    </div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 . All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
