@@ -15,13 +15,6 @@
     
     <!-- Sidebar Navigation -->
     <nav class="sidebar" id="sidebar">
-        <div class="sidebar-header">
-            <button class="sidebar-close" id="sidebar-close" aria-label="Close navigation">
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-        
         <ul class="sidebar-nav">
             <li><a href="../index.html" class="sidebar-link">About</a></li>
             <li><a href="../experience/index.html" class="sidebar-link">Experience</a></li>
@@ -313,7 +306,6 @@
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.getElementById('hamburger');
             const sidebar = document.getElementById('sidebar');
-            const sidebarClose = document.getElementById('sidebar-close');
             const sidebarOverlay = document.getElementById('sidebar-overlay');
             const body = document.body;
 
@@ -364,7 +356,6 @@
             }
 
             hamburger.addEventListener('click', toggleSidebar);
-            sidebarClose.addEventListener('click', closeSidebar);
 
             // Mobile overlay click to close
             if (sidebarOverlay) {
