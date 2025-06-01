@@ -5,32 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Borja Rojo Ilvento - Resume</title>
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="site-title">
-                <!-- <a href="../index.html">Borja Rojo Ilvento</a> -->
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="../index.html">About</a></li>
-                    <li><a href="../experience/index.html">Experience</a></li>
-                    <li><a href="../education/index.html">Education</a></li>
-                    <li><a href="../skills/index.html">Skills</a></li>
-                    <li><a href="index.html">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Sidebar overlay for mobile -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close navigation">
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+        
+        <ul class="sidebar-nav">
+            <li><a href="../index.html" class="sidebar-link">About</a></li>
+            <li><a href="../experience/index.html" class="sidebar-link">Experience</a></li>
+            <li><a href="../education/index.html" class="sidebar-link">Education</a></li>
+            <li><a href="../skills/index.html" class="sidebar-link">Skills</a></li>
+            <li><a href="index.html" class="sidebar-link">Contact</a></li>
+        </ul>
+    </nav>
 
-    <main>
+    <!-- Main content with hamburger and title aligned -->
+    <main class="main-content">
         <div class="container">
-            <h1>
+            <div class="page-header">
+                <button class="hamburger-menu" id="hamburger" aria-label="Open navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <h1 class="page-title">
 <span>
     Contact
 </span>
 </h1>
+            </div>
             <div class="content">
                 
 <p>Borja Rojo Ilvento</p>
@@ -47,5 +62,115 @@
             <p>&copy; 2025 Borja Rojo Ilvento. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- JavaScript for persistent sidebar functionality -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const sidebar = document.getElementById('sidebar');
+            const sidebarClose = document.getElementById('sidebar-close');
+            const sidebarOverlay = document.getElementById('sidebar-overlay');
+            const body = document.body;
+
+            // Check if we're on mobile
+            function isMobile() {
+                return window.innerWidth <= 768;
+            }
+
+            // Check if sidebar should be open from localStorage (desktop only)
+            const sidebarState = localStorage.getItem('sidebarOpen');
+            if (sidebarState === 'true' && !isMobile()) {
+                // Set initial state without animation
+                sidebar.style.transition = 'none';
+                sidebar.classList.add('active');
+                body.classList.add('sidebar-open');
+                // Re-enable transitions after initial state is set
+                setTimeout(() => {
+                    sidebar.style.transition = '';
+                }, 50);
+            }
+
+            function openSidebar() {
+                sidebar.classList.add('active');
+                body.classList.add('sidebar-open');
+                if (isMobile()) {
+                    sidebarOverlay.classList.add('active');
+                } else {
+                    localStorage.setItem('sidebarOpen', 'true');
+                }
+            }
+
+            function closeSidebar() {
+                sidebar.classList.remove('active');
+                body.classList.remove('sidebar-open');
+                if (isMobile()) {
+                    sidebarOverlay.classList.remove('active');
+                } else {
+                    localStorage.setItem('sidebarOpen', 'false');
+                }
+            }
+
+            function toggleSidebar() {
+                if (sidebar.classList.contains('active')) {
+                    closeSidebar();
+                } else {
+                    openSidebar();
+                }
+            }
+
+            hamburger.addEventListener('click', toggleSidebar);
+            sidebarClose.addEventListener('click', closeSidebar);
+
+            // Mobile overlay click to close
+            if (sidebarOverlay) {
+                sidebarOverlay.addEventListener('click', closeSidebar);
+            }
+
+            // Close sidebar on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && sidebar.classList.contains('active')) {
+                    closeSidebar();
+                }
+            });
+
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                if (isMobile()) {
+                    // On mobile, close sidebar and clear localStorage state
+                    if (sidebar.classList.contains('active')) {
+                        sidebarOverlay.classList.add('active');
+                    }
+                } else {
+                    // On desktop, remove overlay
+                    sidebarOverlay.classList.remove('active');
+                    // Restore sidebar state from localStorage
+                    const sidebarState = localStorage.getItem('sidebarOpen');
+                    if (sidebarState === 'true') {
+                        sidebar.classList.add('active');
+                        body.classList.add('sidebar-open');
+                    }
+                }
+            });
+
+            // Highlight current page in navigation
+            const currentPath = window.location.pathname;
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            sidebarLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath || 
+                    (currentPath === '/' && link.getAttribute('href').includes('index'))) {
+                    link.classList.add('current');
+                }
+            });
+
+            // On mobile, close sidebar when clicking nav links
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (isMobile()) {
+                        closeSidebar();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
