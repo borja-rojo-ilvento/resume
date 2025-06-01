@@ -5,11 +5,19 @@
     padding: 0;
 }
 
+/* Make html and body full height */
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f5f5f5;
+    /* Use flexbox to create sticky footer layout */
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -27,6 +35,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    /* Flex: don't grow or shrink */
+    flex-shrink: 0;
 }
 
 header .container {
@@ -65,6 +75,8 @@ header .container {
 /* Main content area */
 main {
     padding: 40px 0;
+    /* Flex: grow to fill available space */
+    flex: 1;
 }
 
 /* Section name styles */
@@ -261,6 +273,8 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    /* Flex: don't grow or shrink, stay at bottom */
+    flex-shrink: 0;
 }
 
 /* Contact page specific styles */
