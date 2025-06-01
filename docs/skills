@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - Resume</title>
+    <title>Borja Rojo Ilvento - Resume</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="site-title">
-                <!-- <a href="index.html"></a> -->
+                <!-- <a href="index.html">Borja Rojo Ilvento</a> -->
             </div>
             <nav class="main-nav">
                 <ul>
@@ -289,7 +289,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 . All rights reserved.</p>
+            <p>&copy; 2025 Borja Rojo Ilvento. All rights reserved.</p>
         </div>
     </footer>
 </body>

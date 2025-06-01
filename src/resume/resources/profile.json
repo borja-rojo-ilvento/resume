@@ -1,11 +1,9 @@
-[
-  {
-    "name": "Borja Rojo Ilvento",
-    "title": "Senior Software Engineer",
-    "location": "New York, NY",
-    "linkedin": "https://www.linkedin.com/in/borja-rojo-ilvento/",
-    "github": "https://github.com/borja-rojo-ilvento",
-    "email": "borja.rojo@example.com",
-    "bio": "I like writing code."
-  }
-]
+{
+  "name": "Borja Rojo Ilvento",
+  "title": "Senior Software Engineer",
+  "location": "New York, NY",
+  "linkedin": "https://www.linkedin.com/in/borja-rojo-ilvento/",
+  "github": "https://github.com/borja-rojo-ilvento",
+  "email": "borja.rojo@example.com",
+  "bio": "I like writing code."
+}
