@@ -713,6 +713,9 @@ footer {
         margin-left: 0;
     }
     
+    .profile-name {
+        font-size: 1.8rem;
+    }
     .resume-section-container {
         padding: 20px; /* Even more compact on mobile */
     }
