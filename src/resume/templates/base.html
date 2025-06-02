@@ -33,6 +33,11 @@
                     <span></span>
                     <span></span>
                 </button>
+                {% if profile and profile.email %}
+                <a href="mailto:{{ profile.email }}?subject=Let's%20Connect" class="header-message-button">
+                    Send me a message
+                </a>
+                {% endif %}
                 <h1 class="page-title">{% block section_name %}{% endblock %}</h1>
             </div>
             <div class="content">

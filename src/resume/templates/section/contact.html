@@ -9,16 +9,6 @@
 {% block content %}
 <div class="resume-section-container">
     <div class="contact-container">
-        <!-- Header with title and send button -->
-        <div class="contact-header">
-            {% if profile and profile.email %}
-            <a href="mailto:{{ profile.email }}?subject=Let's%20Connect" class="contact-send-button">
-                Send me a message
-            </a>
-            {% endif %}
-        </div>
-
-
         <!-- Simplified Contact Information -->
         {% if profile %}
         <div class="contact-info-simple">
