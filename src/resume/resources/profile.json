@@ -5,5 +5,5 @@
   "linkedin": "https://www.linkedin.com/in/borja-rojo-ilvento/",
   "github": "https://github.com/borja-rojo-ilvento",
   "email": "borja.rojo@example.com",
-  "bio": "I like writing code."
+  "bio": ["I'm a software engineer who finds deep satisfaction in elegant solutions—in distilling complex problems into code that works cleanly and efficiently. The process of discovery, of finding that right approach that captures the essence of a challenge, is what keeps me engaged.", "My approach to learning balances two essential elements. I study fundamentals and underlying principles, which helps me recognize new possibilities as technologies evolve. But real competency comes through building and experimenting, through testing ideas against reality and working through the unknowns that force you to confront what you actually understand.", "In day-to-day work, I naturally gravitate toward helping colleagues think through problems. I've found that staying aware of when someone might benefit from a different perspective creates opportunities for exchanges that strengthen everyone's understanding.", "What ultimately drives me is creating solutions that deliver genuine value—automating tedious processes, improving system performance, making complex data more accessible. Technology is most meaningful when it serves real needs and makes someone's work more effective."]
 }

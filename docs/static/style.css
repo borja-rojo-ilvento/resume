@@ -405,15 +405,16 @@ p, .description {
     text-decoration: none;
 }
 
+/* Update the .profile-bio class in your style.css file */
 .profile-bio {
     line-height: 1.8;
     font-size: 1.1rem;
+    text-align: justify; /* Center-justify the bio text */
 }
 
 .profile-bio p {
     margin-bottom: 18px;
 }
-
 /* Footer styles */
 footer {
     background: linear-gradient(180deg, var(--parchment-bg) 0%, var(--parchment-light) 100%);

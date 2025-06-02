@@ -15,35 +15,18 @@
             <div class="profile-title">{{ profile.title }}</div>
         </div>
         
-        <div class="profile-contact">
-            <div class="contact-item">
-                <span class="contact-label">Location:</span>
-                <span class="contact-value">{{ profile.location }}</span>
-            </div>
-            
-            <div class="social-links">
-                {% if profile.linkedin %}
-                <a href="{{ profile.linkedin }}" target="_blank" class="social-link">
-                    <span class="social-icon">LinkedIn</span>
-                </a>
-                {% endif %}
-                
-                {% if profile.github %}
-                <a href="{{ profile.github }}" target="_blank" class="social-link">
-                    <span class="social-icon">GitHub</span>
-                </a>
-                {% endif %}
-                
-                {% if profile.email %}
-                <a href="mailto:{{ profile.email }}" class="social-link">
-                    <span class="social-icon">Email</span>
-                </a>
-                {% endif %}
-            </div>
-        </div>
-        
         <div class="profile-bio">
-            {{ profile.bio | safe }}
+            {% if profile.bio %}
+                {% if profile.bio is string %}
+                    <!-- Handle legacy single string bio -->
+                    <p>{{ profile.bio }}</p>
+                {% else %}
+                    <!-- Handle new list of paragraphs bio -->
+                    {% for paragraph in profile.bio %}
+                        <p>{{ paragraph }}</p>
+                    {% endfor %}
+                {% endif %}
+            {% endif %}
         </div>
     </div>
     {% else %}
