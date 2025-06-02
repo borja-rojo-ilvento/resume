@@ -194,7 +194,7 @@ body {
 .resume-section-container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 40px;
+    padding: 30px; /* Reduced from 40px */
     background: var(--paper-white);
     border-radius: 16px;
     box-shadow: 0 8px 25px var(--shadow-soft);
@@ -223,8 +223,8 @@ p, .description {
 
 /* Each individual entry (education or experience) */
 .resume-entry {
-    margin-bottom: 24px;
-    padding-bottom: 20px;
+    margin-bottom: 12px; /* Reduced from 24px */
+    padding-bottom: 8px;  /* Reduced from 20px */
 }
 
 /* Header layout for each entry */
@@ -232,7 +232,7 @@ p, .description {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 8px;
+    margin-bottom: 4px; /* Reduced from 8px */
 }
 
 /* Left side info (institution/company and location) */
@@ -248,7 +248,7 @@ p, .description {
 .company {
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.1rem; /* Reduced from 1.2rem */
     color: var(--ink-dark);
 }
 
@@ -273,13 +273,13 @@ p, .description {
     justify-content: space-between;
     align-items: baseline;
     color: var(--ink-medium);
-    margin-bottom: 12px;
+    margin-bottom: 6px; /* Reduced from 12px */
 }
 
 /* Subject/Position styling - Education only */
 .subject {
     font-weight: 600;
-    font-size: 1.05rem;
+    font-size: 1rem; /* Reduced from 1.05rem */
     color: var(--ink-dark);
 }
 
@@ -318,11 +318,83 @@ p, .description {
     line-height: 1.8;
 }
 
-/* Divider between entries */
+/* Divider between entries - HIDDEN for compact layout */
 .resume-divider {
+    display: none;
+}
+
+/* Grouped Education Styles */
+.education-group {
+    margin-bottom: 24px;
+}
+
+.institution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--border-light);
+}
+
+.institution-info {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.institution-dates {
+    font-style: italic;
+    color: var(--ink-medium);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.education-subitems {
+    margin-left: 20px;
+    margin-top: 6px;
+}
+
+.education-subitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px; /* Reduced from 8px for tighter spacing */
+    padding: 2px 0; /* Reduced from 6px 0 */
+}
+
+.subitem-main {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+}
+
+.education-subitem .subject {
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink-dark);
+    margin: 0;
+}
+
+.education-subitem .tier {
+    font-style: italic;
+    color: var(--ink-light);
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.subitem-date {
+    font-style: italic;
+    color: var(--ink-medium);
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.institution-divider {
     height: 2px;
     background: linear-gradient(90deg, transparent, var(--border-light), transparent);
-    margin: 32px 0;
+    margin: 20px 0;
     border-radius: 1px;
 }
 
@@ -415,6 +487,7 @@ p, .description {
 .profile-bio p {
     margin-bottom: 18px;
 }
+
 /* Footer styles */
 footer {
     background: linear-gradient(180deg, var(--parchment-bg) 0%, var(--parchment-light) 100%);
@@ -613,7 +686,12 @@ footer {
     }
     
     .resume-section-container {
-        padding: 25px;
+        padding: 20px; /* Even more compact on mobile */
+    }
+    
+    .resume-entry {
+        margin-bottom: 10px; /* More compact on mobile */
+        padding-bottom: 6px;
     }
     
     .resume-header {
@@ -678,5 +756,38 @@ footer {
     
     .availability-item {
         padding: 12px;
+    }
+
+    /* Mobile adjustments for grouped education */
+    .institution-header {
+        flex-direction: column;
+        gap: 4px;
+        align-items: flex-start;
+    }
+    
+    .education-subitems {
+        margin-left: 15px;
+    }
+    
+    .education-subitem {
+        flex-direction: column;
+        gap: 2px;
+        align-items: flex-start;
+        margin-bottom: 6px;
+    }
+    
+    .subitem-main {
+        flex-direction: column;
+        gap: 1px;
+        align-items: flex-start;
+    }
+    
+    .subitem-date {
+        font-size: 0.8rem;
+        margin-top: 2px;
+    }
+    
+    .institution {
+        font-size: 1.1rem;
     }
 }

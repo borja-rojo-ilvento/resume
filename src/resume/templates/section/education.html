@@ -8,23 +8,59 @@
 
 {% block content %}
 <div class="resume-section-container">
-    {% for instance in education %}
-    <div class="resume-entry">
-        <div class="resume-header">
-            <div class="primary-info">
-                <span class="institution">{{ instance.institution }}</span>
-                <span class="location">{{ instance.location }}</span>
+    {% set grouped_education = {} %}
+    
+    {# Group education entries by institution #}
+    {% for entry in education %}
+        {% if entry.institution not in grouped_education %}
+            {% set _ = grouped_education.update({entry.institution: []}) %}
+        {% endif %}
+        {% set _ = grouped_education[entry.institution].append(entry) %}
+    {% endfor %}
+    
+    {# Display grouped education #}
+    {% for institution, entries in grouped_education.items() %}
+        <div class="education-group">
+            {# Institution header - show location from first entry #}
+            <div class="institution-header">
+                <div class="institution-info">
+                    <span class="institution">{{ institution }}</span>
+                    <span class="location">{{ entries[0].location }}</span>
+                </div>
+                {# Show date range across all entries for this institution #}
+                <div class="institution-dates">
+                    {% set dates = [] %}
+                    {% for entry in entries %}
+                        {% set _ = dates.append(entry.date) %}
+                    {% endfor %}
+                    {% if dates|length > 1 %}
+                        {# Show range if multiple entries #}
+                        {{ dates|min }} - {{ dates|max if dates|max != dates|min else '' }}
+                    {% else %}
+                        {{ dates[0] }}
+                    {% endif %}
+                </div>
             </div>
-            <div class="date-range">{{ instance.date }}</div>
+            
+            {# Sub-entries for each degree/certificate #}
+            <div class="education-subitems">
+                {% for entry in entries %}
+                    <div class="education-subitem">
+                        <div class="subitem-main">
+                            <span class="subject">{{ entry.subject }}</span>
+                            <span class="tier">{{ entry.tier }}</span>
+                        </div>
+                        {% if entries|length > 1 %}
+                            <div class="subitem-date">{{ entry.date }}</div>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-        <div class="resume-details">
-            <div class="subject">{{ instance.subject }}</div>
-            <div class="tier">{{ instance.tier }}</div>
-        </div>
-    </div>
-    {% if not loop.last %}
-    <div class="resume-divider"></div>
-    {% endif %}
+        
+        {% if not loop.last %}
+        <div class="institution-divider"></div>
+        {% endif %}
     {% endfor %}
 </div>
 {% endblock %}
