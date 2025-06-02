@@ -184,6 +184,28 @@ body {
     flex-grow: 1;
 }
 
+/* Header Message Button - positioned in page header */
+.header-message-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, var(--accent-warm), var(--accent-soft));
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.header-message-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(184, 134, 11, 0.4);
+    background: linear-gradient(135deg, var(--accent-soft), var(--accent-warm));
+}
+
 /* Main content area */
 .main-content {
     padding: 0 0 60px;
@@ -674,6 +696,12 @@ footer {
     
     .hamburger-menu span {
         width: 18px;
+    }
+
+    .header-message-button {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+        order: 3; /* Place button last on mobile */
     }
     
     /* On mobile, keep overlay behavior for better UX */
