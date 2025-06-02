@@ -40,6 +40,51 @@
     "Capacity": "Familiar"
   },
   {
+    "Type": "Libraries",
+    "Skill": "ROS",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "LangChain",
+    "Capacity": "Expert"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "FastAPI",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "flask",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "numpy",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "pandas",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "matplotlib",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "scikit-learn",
+    "Capacity": "Familiar"
+  },
+  {
+    "Type": "Libraries",
+    "Skill": "C++ STL",
+    "Capacity": "Proficient"
+  },
+  {
     "Type": "OS",
     "Skill": "Linux",
     "Capacity": "Knowledgable"
@@ -83,35 +128,5 @@
     "Type": "Tool",
     "Skill": "svn",
     "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "ROS",
-    "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "numpy",
-    "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "pandas",
-    "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "matplotlib",
-    "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "scikit-learn",
-    "Capacity": "Familiar"
-  },
-  {
-    "Type": "Libraries",
-    "Skill": "C++ STL",
-    "Capacity": "Proficient"
   }
 ]
