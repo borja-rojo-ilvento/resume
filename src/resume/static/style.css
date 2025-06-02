@@ -437,7 +437,7 @@ p, .description {
 
 .profile-name {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 8px;
     color: var(--ink-dark);
     font-weight: 700;
@@ -713,9 +713,6 @@ footer {
         margin-left: 0;
     }
     
-    .profile-name {
-        font-size: 1.5rem;
-    }
     .resume-section-container {
         padding: 20px; /* Even more compact on mobile */
     }
