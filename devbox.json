@@ -1,15 +1,18 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
-  "packages": [
-    "uv@latest",
-    "ruff@latest",
-    "python@3.12",
-    "jq@latest",
-    "bat@latest"
-  ],
+  "packages": {
+    "uv": "latest",
+    "ruff": "latest",
+    "python": {
+      "version": "3.12",
+      "disable_plugin": true
+    },
+    "jq": "latest",
+    "bat": "latest"
+  },
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null",
+      "uv sync",
       "source .venv/bin/activate"
     ],
     "scripts": {
